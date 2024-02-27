@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+
+}
+#loginBtn{
+    width:20%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+#loginBtn:hover{
+  box-shadow: 0px 0px lightseagreen ,0 0 10px black,0 0 5px lightcyan ;
+}
+#loginform{
+    background-color: aquamarine;
+    width:50%;
+    
+}

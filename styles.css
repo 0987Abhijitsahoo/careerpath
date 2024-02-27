@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  
+    background-color:lightblue;
+    color: #fff;
+    text-align: left;
+    padding: 0.5em;
+   
+}
+#log{
+  position:absolute;
+  top:2.4em;
+  right:5em;
+  padding:10px;
+  border-radius: 40px;
+  background-color: blue;
+  color: white;
+}
+#log:hover{
+  box-shadow: 5px 5px lightseagreen ,0 0 25px black,0 0 5px lightcyan ;
+}
+
+h3{
+  color: white;
+  text-shadow: 5px 5px lightseagreen ,0 0 25px black,0 0 5px lightcyan;
+}
+h1{
+  color: white;
+  text-shadow: 5px 5px lightseagreen,0 0 25px blue,0 0 5px darkblue; 
+}
+#a{
+    height:550px;
+    width:485px;
+    padding:5px;
+    margin:5px;
+    float:left;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+   
+}
+#a:hover{
+  box-shadow: 0 0 10px lawngreen;
+}
+
+#b {
+    height:550px;
+    width:485px;
+  padding:6px;
+  margin:5px;
+  float:left;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+}
+#b:hover{
+  box-shadow: 0 0 10px lawngreen;
+}
+
+#c {
+    height:550px;
+    width: 485px;
+    padding:6px;
+    margin:5px;
+    float:left;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+  }
+  #c:hover{
+    box-shadow: 0 0 10px lawngreen;
+  }
+ 
+
+  .top-left{
+    position: absolute;
+    top:200px;
+    left:75px;
+  }
+  .top-left1{
+    position: absolute;
+    top:12em;
+    left:35em;
+  }
+footer{
+  text-align:center;
+  color:black;
+  margin:20px;
+}
+hr{
+  width:75%;
+}
+#privacy:hover{
+  color:red;
+}
+  

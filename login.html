@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script1.js"></script>
+    <style>
+        body{
+            text-align: center;
+
+        }
+        #loginBtn{
+            width:20%;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        #loginBtn:hover{
+          box-shadow: 0px 0px lightseagreen ,0 0 10px black,0 0 5px lightcyan ;
+        }
+        #loginform{
+            background-color: aquamarine;
+            width:50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+       
+        <form name="myForm" action="/action_page.php" onsubmit="return validate()" id="loginform">
+            <h1>Login / Sign Up</h1>
+            <div class="required">
+           <label class="field" for="name">Name</label>
+           <input type="text" id="name" name="name" >
+  </div>
+<br>
+        <label for="phone">Phone No:
+        <input type="text" id="phone" name="username"></label>
+    <br><br>
+    
+        <label for="pass">Password:</label>
+        <input type="text" id="pass" name="password"></label>
+<br><br>
+        <label for="cpass"> Conform Password:
+        <input type="text" id="cpass" name="cpass"></label>
+    <br><br>
+        <input type="submit" id="loginBtn">
+      </form></center>
+
+      <script>
+      
+      function validate(){
+     var a=document.getElementById("name").value;
+     var b=document.getElementById("phone").value;
+     var c=document.getElementById("pass").value;
+     var d=document.getElementById("cpass").value;
+      
+     if(a==""||b==""||c==""||d=="")
+     {
+       alert("All fields must be filled ");
+       return false;
+     }
+     else if (b.length<10||b.length>10)
+     {
+       alert("PHONE NO. MUST 10 DIGIT");
+       return false;
+     }
+     else if(isNaN(b))
+     {
+       alert("enter valid phone no.");
+       return false;
+     }
+     else if (c!=d)
+     {
+        alert("enter matching password");
+       return false;
+       
+     }
+     else
+     {
+        true;
+     }
+    }
+    
+      </script>
+</body>
+</html>
